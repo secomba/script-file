@@ -69,6 +69,7 @@ describe('pm', function () {
                     assert(getRunning().length > 0);
                     return killAll();
                 })
+                .then(() => new Promise(res => setInterval(res, 200)))
                 .then(() => {
                     assert(getRunning().length === 0);
                     done();
