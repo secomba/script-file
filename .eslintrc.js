@@ -8,6 +8,7 @@ module.exports = {
     ],
     "rules": {
          "indent": ["error", 4],
-         "max-len": ["warn", 140]
+         "max-len": ["warn", 140],
+         "linebreak-style": ["warn", "unix"]
     }
 };
